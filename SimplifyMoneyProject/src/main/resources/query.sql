@@ -1,39 +1,77 @@
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
+INSERT INTO users (name, age, gender, income, married, hasChildren, homeOwner, hasVehicle, travelFrequency, occupation, healthStatus) 
 VALUES 
-('Health', 'Basic Health Plan', 'Covers hospitalization expenses', 5000.00, 'Hospitalization, OPD, Medicines', 4.5, 'Low', 18, 60, 30000);
+    ('Michael Brown', 45, 'Male', 62000.00, true, true, true, true, 4, 'Financial Analyst', 'Healthy'),
+    ('Emily Davis', 32, 'Female', 51000.00, false, false, false, true, 6, 'UX Designer', 'Healthy'),
+    ('Daniel Miller', 29, 'Male', 46000.00, false, false, false, false, 3, 'Teacher', 'Allergic'),
+    ('Sophia Wilson', 38, 'Female', 67000.00, true, true, true, true, 2, 'HR Manager', 'Healthy'),
+    ('James Anderson', 55, 'Male', 90000.00, true, true, true, false, 1, 'Architect', 'Diabetic'),
+    ('Olivia Thomas', 30, 'Female', 52000.00, false, false, false, true, 5, 'Software Engineer', 'Healthy'),
+    ('William Martinez', 42, 'Male', 78000.00, true, true, true, true, 4, 'Project Manager', 'Healthy'),
+    ('Isabella Jackson', 36, 'Female', 63000.00, true, true, true, true, 6, 'Accountant', 'Healthy'),
+    ('Benjamin White', 50, 'Male', 85000.00, true, true, true, false, 2, 'Lawyer', 'Heart Condition'),
+    ('Mia Harris', 27, 'Female', 45000.00, false, false, false, true, 7, 'Content Writer', 'Healthy'),
+    ('Ethan Clark', 40, 'Male', 70000.00, true, true, true, true, 3, 'Business Analyst', 'Healthy'),
+    ('Ava Lewis', 34, 'Female', 56000.00, true, false, false, true, 5, 'Photographer', 'Asthmatic'),
+    ('Alexander Hall', 48, 'Male', 82000.00, true, true, true, false, 2, 'Professor', 'Diabetic'),
+    ('Charlotte Allen', 31, 'Female', 49000.00, false, false, false, true, 4, 'Data Scientist', 'Healthy'),
+    ('Mason Young', 52, 'Male', 88000.00, true, true, true, true, 1, 'Civil Engineer', 'Healthy'),
+    ('Amelia Scott', 28, 'Female', 47000.00, false, false, false, true, 6, 'Nurse', 'Healthy'),
+    ('Logan King', 44, 'Male', 75000.00, true, true, true, true, 2, 'Real Estate Agent', 'Healthy'),
+    ('Harper Green', 29, 'Female', 50000.00, false, false, false, true, 3, 'Journalist', 'Healthy'),
+    ('Elijah Baker', 53, 'Male', 92000.00, true, true, true, false, 1, 'Doctor', 'Heart Condition'),
+    ('Evelyn Gonzalez', 37, 'Female', 62000.00, true, true, true, true, 4, 'Marketing Executive', 'Healthy'),
+    ('Henry Nelson', 41, 'Male', 78000.00, true, true, true, false, 3, 'Software Architect', 'Healthy'),
+    ('Abigail Carter', 33, 'Female', 58000.00, true, false, false, true, 5, 'Designer', 'Healthy'),
+    ('Sebastian Mitchell', 47, 'Male', 81000.00, true, true, true, true, 2, 'Entrepreneur', 'Diabetic'),
+    ('Ella Perez', 30, 'Female', 51000.00, false, false, false, true, 6, 'Fashion Designer', 'Healthy'),
+    ('Jack Roberts', 39, 'Male', 70000.00, true, true, true, true, 3, 'Product Manager', 'Healthy'),
+    ('Scarlett Turner', 28, 'Female', 49000.00, false, false, false, true, 4, 'Social Media Manager', 'Healthy'),
+    ('Lucas Phillips', 55, 'Male', 94000.00, true, true, true, false, 1, 'Lawyer', 'Heart Condition'),
+    ('Grace Campbell', 32, 'Female', 52000.00, false, false, false, true, 5, 'HR Specialist', 'Healthy'),
+    ('Owen Parker', 46, 'Male', 80000.00, true, true, true, true, 2, 'Mechanical Engineer', 'Healthy'),
+    ('Chloe Evans', 35, 'Female', 60000.00, true, true, true, true, 3, 'Consultant', 'Healthy'),
+    ('Liam Edwards', 49, 'Male', 85000.00, true, true, true, false, 1, 'Financial Consultant', 'Diabetic'),
+    ('Zoe Collins', 27, 'Female', 48000.00, false, false, false, true, 6, 'Nutritionist', 'Healthy'),
+    ('Nathan Stewart', 43, 'Male', 77000.00, true, true, true, true, 3, 'Operations Manager', 'Healthy'),
+    ('Hannah Sanchez', 31, 'Female', 53000.00, false, false, false, true, 4, 'Web Developer', 'Healthy'),
+    ('Caleb Morris', 51, 'Male', 88000.00, true, true, true, false, 2, 'Surgeon', 'Heart Condition'),
+    ('Victoria Rogers', 34, 'Female', 57000.00, true, false, false, true, 5, 'Artist', 'Asthmatic'),
+    ('Wyatt Reed', 42, 'Male', 74000.00, true, true, true, true, 3, 'IT Manager', 'Healthy'),
+    ('Samantha Cook', 29, 'Female', 50000.00, false, false, false, true, 6, 'Software Developer', 'Healthy'),
+    ('Dylan Murphy', 54, 'Male', 91000.00, true, true, true, false, 1, 'Senior Executive', 'Diabetic');
 
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Life', 'Term Life Plan', 'Life coverage for 20 years', 7000.00, 'Death benefits, Accidental coverage', 4.7, 'Medium', 21, 65, 40000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Vehicle', 'Car Insurance', 'Comprehensive vehicle protection', 4500.00, 'Accident, Theft, Fire', 4.3, 'High', 20, 75, 35000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Travel', 'International Travel', 'Travel insurance for international trips', 2500.00, 'Lost Baggage, Flight Delay, Medical Expenses', 4.2, 'Low', 18, 70, 25000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Health', 'Family Health Plan', 'Covers entire family health needs', 10000.00, 'Hospitalization, Maternity, Medicines', 4.8, 'Low', 18, 65, 50000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Property', 'Home Insurance', 'Coverage against natural disasters', 8000.00, 'Fire, Earthquake, Theft, Flood', 4.6, 'Medium', 25, 75, 60000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Life', 'Whole Life Plan', 'Life-long coverage with savings benefits', 12000.00, 'Death benefits, Retirement savings', 4.9, 'Low', 25, 80, 70000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Business', 'Corporate Liability', 'Covers business legal liabilities', 15000.00, 'Employee safety, Business interruption, Lawsuits', 4.7, 'High', 30, 70, 80000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Health', 'Senior Citizen Plan', 'Exclusive for senior citizens', 9000.00, 'Hospitalization, OPD, Critical illness', 4.4, 'Medium', 60, 80, 40000);
-
-INSERT INTO insurance (type, name, description, premium, coverage_details, popularity_score, risk_category, min_age, max_age, min_income)
-VALUES 
-('Travel', 'Domestic Travel Plan', 'Covers domestic travel risks', 2000.00, 'Medical emergency, Lost luggage, Trip cancellation', 4.1, 'Low', 18, 65, 20000);
+    
+ INSERT INTO insurance (
+    type, name, description, premium, coverageDetails, 
+    popularityScore, riskCategory, minAge, maxAge, minIncome, 
+    policyNumber, purchaseDate, policyDocumentPath, purchased, userId
+) VALUES 
+    ('Health', 'Basic Health Insurance', 'Covers hospitalization expenses', 5000.00, 'Covers hospitalization and OPD', 4.5, 'Low Risk', 18, 65, 25000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Premium Health Plan', 'Includes dental and vision coverage', 8000.00, 'Covers hospitalization, dental, and vision', 4.7, 'Medium Risk', 20, 60, 30000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Term Life Insurance', 'Provides coverage for a fixed term', 6000.00, 'Term life insurance with benefits', 4.3, 'Low Risk', 25, 55, 35000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Whole Life Insurance', 'Covers life with investment benefits', 12000.00, 'Whole life with savings plan', 4.8, 'High Risk', 25, 60, 50000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Basic Car Insurance', 'Covers third-party liability', 4000.00, 'Basic liability and damage cover', 4.2, 'Low Risk', 18, 70, 20000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Comprehensive Car Insurance', 'Full coverage for damages', 9000.00, 'Covers theft, accident, and third-party liability', 4.9, 'High Risk', 20, 70, 40000.00, NULL, NULL, NULL, 0, NULL),
+    ('Home', 'Basic Home Insurance', 'Protects against natural disasters', 7000.00, 'Covers fire, theft, and disasters', 4.5, 'Medium Risk', 30, 80, 45000.00, NULL, NULL, NULL, 0, NULL),
+    ('Home', 'Premium Home Insurance', 'Includes additional coverage', 12000.00, 'Covers everything from floods to theft', 4.9, 'High Risk', 30, 75, 60000.00, NULL, NULL, NULL, 0, NULL),
+    ('Travel', 'Basic Travel Insurance', 'Covers trip cancellations', 2500.00, 'Includes medical emergencies abroad', 4.3, 'Low Risk', 18, 65, 25000.00, NULL, NULL, NULL, 0, NULL),
+    ('Travel', 'Comprehensive Travel Insurance', 'Full protection for international travel', 6000.00, 'Covers flight delays, cancellations, and medical', 4.7, 'Medium Risk', 20, 70, 30000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Gold Health Plan', 'Top-tier healthcare coverage', 15000.00, 'Includes VIP hospitalization and specialists', 4.9, 'High Risk', 30, 65, 75000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Senior Citizen Health Plan', 'Covers age-related health conditions', 10000.00, 'Specialized coverage for senior citizens', 4.6, 'Medium Risk', 50, 80, 50000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Third-Party Vehicle Insurance', 'Legally required basic car insurance', 3000.00, 'Only covers third-party liabilities', 4.0, 'Low Risk', 18, 70, 20000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Luxury Car Insurance', 'Premium coverage for luxury vehicles', 25000.00, 'Includes theft, accidents, and VIP services', 4.9, 'High Risk', 25, 70, 100000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Young Professionals Life Insurance', 'Affordable life insurance for young people', 5000.00, 'Term life for professionals', 4.4, 'Low Risk', 22, 40, 30000.00, NULL, NULL, NULL, 0, NULL),
+    ('Home', 'Flood Protection Plan', 'Specialized coverage for flood-prone areas', 15000.00, 'Protects against flooding and water damage', 4.8, 'High Risk', 30, 75, 55000.00, NULL, NULL, NULL, 0, NULL),
+    ('Travel', 'Extreme Sports Travel Insurance', 'Covers adventure activities', 8000.00, 'Covers skydiving, scuba diving, and more', 4.7, 'High Risk', 18, 50, 45000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Family Health Plan', 'Covers entire family under one plan', 20000.00, 'Health insurance for family members', 4.6, 'Medium Risk', 25, 65, 60000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Diabetes Care Plan', 'Special insurance for diabetes patients', 12000.00, 'Covers hospitalization and medicine costs', 4.5, 'Medium Risk', 35, 70, 55000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Women’s Special Life Plan', 'Tailored life insurance for women', 10000.00, 'Includes maternity and health benefits', 4.7, 'Medium Risk', 22, 60, 40000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Motorcycle Insurance', 'Covers two-wheelers', 5000.00, 'Covers damages and third-party liabilities', 4.3, 'Medium Risk', 18, 65, 25000.00, NULL, NULL, NULL, 0, NULL),
+    ('Home', 'Tenant’s Insurance', 'Protects renters against damage', 5000.00, 'Includes theft and liability coverage', 4.2, 'Low Risk', 20, 60, 30000.00, NULL, NULL, NULL, 0, NULL),
+    ('Travel', 'Senior Citizen Travel Insurance', 'Covers travel risks for seniors', 7000.00, 'Includes medical emergencies', 4.6, 'Medium Risk', 50, 80, 50000.00, NULL, NULL, NULL, 0, NULL),
+    ('Health', 'Cancer Care Plan', 'Exclusive insurance for cancer patients', 25000.00, 'Includes chemotherapy and hospital care', 4.8, 'High Risk', 30, 70, 70000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Corporate Life Insurance', 'Life coverage for employees', 8000.00, 'Group life insurance for companies', 4.5, 'Medium Risk', 25, 65, 35000.00, NULL, NULL, NULL, 0, NULL),
+    ('Auto', 'Electric Vehicle Insurance', 'Special insurance for EVs', 12000.00, 'Covers battery, parts, and damage', 4.7, 'Medium Risk', 20, 70, 50000.00, NULL, NULL, NULL, 0, NULL),
+    ('Home', 'Earthquake Protection Plan', 'Coverage for seismic zones', 18000.00, 'Protects against earthquake damage', 4.9, 'High Risk', 30, 75, 60000.00, NULL, NULL, NULL, 0, NULL),
+    ('Travel', 'Business Travel Insurance', 'Covers frequent business travelers', 10000.00, 'Includes trip delays, loss of luggage', 4.6, 'Medium Risk', 25, 65, 50000.00, NULL, NULL, NULL, 0, NULL),
+    ('Life', 'Accidental Death Coverage', 'Insurance for accidental death', 20000.00, 'Provides financial support in case of accidental death', 4.9, 'High Risk', 20, 65, 60000.00, NULL, NULL, NULL, 0, NULL);
