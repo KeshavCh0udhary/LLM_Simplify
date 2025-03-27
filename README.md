@@ -35,10 +35,9 @@ A Spring Boot backend API for managing insurance policies, purchases, and docume
 
 ## Request/Response Examples
 
-### Create Insurance (POST /api/insurances)
+### Get Recommendations (GET /api/insurances/recommendations)
 **Request:**
 ```json
-GET /api/insurances/recommendations
 Content-Type: application/json
 
 {
